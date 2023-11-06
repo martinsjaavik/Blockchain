@@ -166,7 +166,7 @@ def newline():
     print("\n")
 
 
-def start():
+def main():
     # Start function to create and interact with the blockchain.
     start_input = input("Do you want to create a Blockchain? Y/N ")
     if start_input == "y" or start_input == "Y":
@@ -177,7 +177,7 @@ def start():
         quit()
     else:
         print("Invalid command. Try again")
-        start()
+        main()
 
 
 def meny(blockchain):
@@ -220,9 +220,6 @@ Press q to quit
         meny(blockchain)
 
 if __name__ == "__main__":
-    print("two.py is being run directly")
+    main()
 else:
     print("two.py is being imported into another module")
-
-
-start()
